@@ -13,6 +13,7 @@ function inicializaPool() {
         user: process.env.DB_USER,      // Usuário do banco de dados
         password: process.env.DB_PASSWORD, // Senha do banco de dados
         database: process.env.DB_NAME,  // Nome do banco de dados
+        port: process.env.DB_PORT || 3306,  // Porta do banco de dados (3306 por padrão)
         waitForConnections: true,       // Aguarda conexões disponíveis
         connectionLimit: 30,            // Número máximo de conexões no pool
         queueLimit: 0,                  // Sem limite para fila de requisições
