@@ -1,8 +1,8 @@
 // monitoring-manager/agendadorConsolidado.js
-const logger = require('../utils/logger');
+const logger = require('../utils/logger/Logger');
 const LogMonitoramentoService = require('../services/LogMonitoramentoService');
-const { testarTodosEquipamentos } = require('../acoes_monitoramento/teste_ping/teste_ping-services/pingar-todos-service');
-const { testarTodosEquipamentosTelnet } = require('../acoes_monitoramento/testar_telnet/testar_telnet-services/conectaTelnet-todos-service');
+const { executarETPersistirParaTodos: testarTodosEquipamentosPing } = require('../services/PingTestService');
+const { executarETPersistirParaTodos: testarTodosEquipamentosTelnet } = require('../services/TelnetService');
 
 let intervalId = null;
 
@@ -17,7 +17,7 @@ async function executarConsolidacaoAutomatica() {
 
   try {
     logger.info('Iniciando testes de Ping em todos os equipamentos...');
-    await testarTodosEquipamentos();
+    await testarTodosEquipamentosPing();
     logger.info('Testes de Ping concluídos.');
 
     logger.info('Iniciando testes de Telnet em todos os equipamentos...');

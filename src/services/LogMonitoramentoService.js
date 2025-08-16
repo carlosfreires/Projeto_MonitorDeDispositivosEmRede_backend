@@ -1,5 +1,5 @@
 // services/LogMonitoramentoService.js
-const logger = require('../utils/logger');
+const logger = require('../utils/logger/Logger');
 const LogMonitoramentoRepository = require('../repositories/LogMonitoramentoRepository');
 const EquipamentoService = require('./EquipamentoService');
 

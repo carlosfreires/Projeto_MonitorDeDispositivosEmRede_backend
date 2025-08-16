@@ -1,7 +1,7 @@
 // repositories/EquipamentoRepository.js
 const { obterConexao } = require('../database/bancoDeDados');
 const EquipamentoModel = require('../models/EquipamentoModel');
-const logger = require('../utils/logger');
+const logger = require('../utils/logger/Logger');
 
 class EquipamentoRepository {
   // Execução centralizada de query para reduzir repetição

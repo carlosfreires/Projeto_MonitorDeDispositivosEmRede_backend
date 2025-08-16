@@ -1,5 +1,5 @@
 // controllers/PingTestController.js
-const loggerPing = require('../utils/logger');
+const loggerPing = require('../utils/logger/Logger');
 const PingTestService = require('../services/PingTestService');
 
 /**

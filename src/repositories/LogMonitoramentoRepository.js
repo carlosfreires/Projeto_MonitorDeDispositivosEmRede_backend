@@ -1,7 +1,7 @@
 // repositories/LogMonitoramentoRepository.js
 const { obterConexao } = require('../database/bancoDeDados');
 const LogMonitoramentoModel = require('../models/LogMonitoramentoModel');
-const logger = require('../utils/logger');
+const logger = require('../utils/logger/Logger');
 
 /**
  * Repositório responsável por todas as operações em logs_monitoramento,

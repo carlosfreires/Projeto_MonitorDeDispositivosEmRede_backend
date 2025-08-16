@@ -1,5 +1,5 @@
 // controllers/TelnetController.js
-const loggerTelnet = require('../utils/logger');
+const loggerTelnet = require('../utils/logger/Logger');
 const TelnetService = require('../services/TelnetService');
 
 /**

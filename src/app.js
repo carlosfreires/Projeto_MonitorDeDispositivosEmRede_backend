@@ -14,11 +14,11 @@
 
 const express = require('express');
 const http = require('http');
-const logger = require('./utils/logger');
+const logger = require('./utils/logger/Logger');
 const corsMiddleware = require('./utils/middlewares/cors');
-const jsonParser = require('./utils/middlewares/jsonParser');
-const tratamentoDeErros = require('./utils/middlewares/tratamentoDeErros');
-const routes = require('./routes');
+const jsonParser = require('./utils/middlewares/json-parser');
+const tratamentoDeErros = require('./utils/middlewares/tratamento-erro');
+const routes = require('./routes/index');
 
 const PORT = parseInt(process.env.PORT || '3000', 10);
 const HOST = process.env.HOST || '0.0.0.0';

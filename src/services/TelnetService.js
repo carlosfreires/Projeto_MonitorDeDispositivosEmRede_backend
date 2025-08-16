@@ -6,7 +6,7 @@
  * - Retorna TelnetModel ou objeto de resumo em operações em lote.
  */
 const net = require('net');
-const logger = require('../utils/logger');
+const logger = require('../utils/logger/Logger');
 const { TelnetModel } = require('../models/TelnetModel');
 const TelnetRepository = require('../repositories/TelnetRepository');
 const EquipamentoService = require('./EquipamentoService');

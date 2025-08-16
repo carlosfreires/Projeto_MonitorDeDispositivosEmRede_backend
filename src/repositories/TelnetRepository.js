@@ -1,7 +1,7 @@
 // repositories/TelnetRepository.js
 const { obterConexao } = require('../database/bancoDeDados');
 const { TelnetModel } = require('../models/TelnetModel');
-const logger = require('../utils/logger');
+const logger = require('../utils/logger/Logger');
 
 /**
  * Repositório responsável por operações na tabela `telnet`.

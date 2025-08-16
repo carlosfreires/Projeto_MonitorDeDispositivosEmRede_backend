@@ -1,6 +1,6 @@
 // services/SessaoService.js
 const crypto = require('crypto');
-const logger = require('../utils/logger');
+const logger = require('../utils/logger/Logger');
 const SessaoRepository = require('../repositories/SessaoRepository');
 const { SessaoModel } = require('../models/SessaoModel');
 

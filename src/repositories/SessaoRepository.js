@@ -1,7 +1,7 @@
 // repositories/SessaoRepository.js
 const { obterConexao } = require('../database/bancoDeDados');
 const { SessaoModel } = require('../models/SessaoModel');
-const logger = require('../utils/logger');
+const logger = require('../utils/logger/Logger');
 
 /**
  * Repositório responsável por operações na tabela `sessoes`.

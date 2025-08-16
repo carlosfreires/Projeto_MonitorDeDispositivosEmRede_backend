@@ -9,9 +9,9 @@
  *
  * Lança erro 401 caso o token seja inválido ou sessão não encontrada.
  */
-const logger = require('../utils/logger');
-const AuthService = require('../services/AuthService');
-const { SessaoService } = require('../services/SessaoService');
+const logger = require('../logger/Logger');
+const AuthService = require('../../services/AuthService');
+const { SessaoService } = require('../../services/SessaoService');
 const jwt = require('jsonwebtoken');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'seu_segredo_super_secreto';

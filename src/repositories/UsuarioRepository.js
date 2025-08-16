@@ -1,6 +1,6 @@
 // repositories/UsuarioRepository.js
 const { obterConexao } = require('../database/bancoDeDados');
-const logger = require('../utils/logger');
+const logger = require('../utils/logger/Logger');
 
 /**
  * Repositório para operações na tabela `usuarios`.

@@ -1,5 +1,5 @@
 // controllers/EquipamentoController.js
-const logger = require('../utils/logger');
+const logger = require('../utils/logger/Logger');
 const EquipamentoService = require('../services/EquipamentoService');
 
 /**

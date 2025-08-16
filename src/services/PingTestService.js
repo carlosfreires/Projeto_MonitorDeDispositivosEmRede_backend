@@ -7,7 +7,7 @@
  * - separa execução do teste (realizarTeste) da persistência (salvar)
  */
 const ping = require('ping');
-const logger = require('../utils/logger');
+const logger = require('../utils/logger/Logger');
 const PingTestRepository = require('../repositories/PingTestRepository');
 const { PingTestResult } = require('../models/PingTestModel');
 const EquipamentoService = require('./EquipamentoService');

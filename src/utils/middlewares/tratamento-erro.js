@@ -7,7 +7,7 @@
  *
  * Uso: app.use(tratamentoDeErros);
  */
-const logger = require('../utils/logger');
+const logger = require('../logger/Logger');
 
 function tratamentoDeErros(err, req, res, next) {
   // Normaliza status

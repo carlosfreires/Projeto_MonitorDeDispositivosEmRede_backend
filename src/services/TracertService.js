@@ -7,7 +7,7 @@
  * - evitar variáveis/trechos indefinidos
  */
 const Traceroute = require('nodejs-traceroute');
-const logger = require('../utils/logger');
+const logger = require('../utils/logger/Logger');
 const { TracertModel } = require('../models/TracertModel');
 const TracertRepository = require('../repositories/TracertRepository');
 const EquipamentoService = require('./EquipamentoService');

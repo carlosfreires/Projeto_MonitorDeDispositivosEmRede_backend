@@ -1,6 +1,6 @@
 // services/EquipamentoService.js
 const EquipamentoRepository = require('../repositories/EquipamentoRepository');
-const logger = require('../utils/logger');
+const logger = require('../utils/logger/Logger');
 
 class EquipamentoService {
   #validarPayloadCadastro({ nome, mac }) {

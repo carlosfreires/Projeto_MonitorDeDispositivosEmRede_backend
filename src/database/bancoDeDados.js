@@ -1,6 +1,6 @@
 const mysql = require('mysql2/promise');
 require('dotenv').config();
-const logger = require('../utils/logger');
+const logger = require('../utils/logger/Logger');
 
 class BancoDeDados {
   #pool = null;

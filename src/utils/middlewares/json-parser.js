@@ -9,7 +9,7 @@
  * O padrão é: limit = "1mb", strict = true.
  */
 const express = require('express');
-const logger = require('../utils/logger');
+const logger = require('../logger/Logger');
 
 const limit = process.env.JSON_LIMIT || '1mb';
 const strict = (process.env.JSON_STRICT ?? 'true').toLowerCase() !== 'false';

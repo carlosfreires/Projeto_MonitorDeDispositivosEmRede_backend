@@ -1,7 +1,7 @@
 // repositories/TracertRepository.js
 const { obterConexao } = require('../database/bancoDeDados');
-const { Tracert } = require('../models/Tracert');
-const logger = require('../utils/logger');
+const { Tracert } = require('../models/TracertModel');
+const logger = require('../utils/logger/Logger');
 
 /**
  * Repositório responsável por operações na tabela `tracert`.

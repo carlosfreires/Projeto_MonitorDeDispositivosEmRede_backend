@@ -11,7 +11,7 @@
  *   - Se houver uma lista separada por vírgula, transformamos em array.
  */
 const cors = require('cors');
-const logger = require('../utils/logger');
+const logger = require('../logger/Logger');
 
 const raw = (process.env.CORS_ORIGIN ?? '*').trim();
 

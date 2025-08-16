@@ -1,6 +1,6 @@
 // services/UsuarioService.js
 const bcrypt = require('bcrypt');
-const logger = require('../utils/logger');
+const logger = require('../utils/logger/Logger');
 const UsuarioModel = require('../models/UsuarioModel');
 const UsuarioRepository = require('../repositories/UsuarioRepository');
 

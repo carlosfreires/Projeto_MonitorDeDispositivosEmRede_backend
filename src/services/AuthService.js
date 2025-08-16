@@ -1,7 +1,7 @@
 // services/AuthService.js
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
-const logger = require('../utils/logger');
+const logger = require('../utils/logger/Logger');
 const UsuarioService = require('./UsuarioService');
 const SessaoService = require('./SessaoService');
 

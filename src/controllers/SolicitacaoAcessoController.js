@@ -1,5 +1,5 @@
 // controllers/SolicitacaoAcessoController.js
-const loggerSolic = require('../utils/logger');
+const loggerSolic = require('../utils/logger/Logger');
 const SolicitacaoAcessoService = require('../services/SolicitacaoAcessoService');
 
 /**

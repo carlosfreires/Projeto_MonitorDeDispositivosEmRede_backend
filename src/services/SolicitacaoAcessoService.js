@@ -1,6 +1,6 @@
 // services/SolicitacaoAcessoService.js
 const bcrypt = require('bcrypt');
-const logger = require('../utils/logger');
+const logger = require('../utils/logger/Logger');
 const SolicitacaoAcessoModel = require('../models/SolicitacaoAcessoModel');
 const SolicitacaoAcessoRepository = require('../repositories/SolicitacaoAcessoRepository');
 
