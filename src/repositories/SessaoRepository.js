@@ -1,6 +1,7 @@
 // repositories/SessaoRepository.js
 const { obterConexao } = require('../database/bancoDeDados');
 const { SessaoModel } = require('../models/SessaoModel');
+const { formatarDataMySQL } = require('../utils/middlewares/formatarDataMySQL')
 const logger = require('../utils/logger/Logger');
 
 /**
@@ -36,7 +37,7 @@ class SessaoRepository {
       INSERT INTO sessoes (usuario_id, token, expiracao, ip)
       VALUES (?, ?, ?, ?)
     `;
-    const expiracaoVal = expiracao instanceof Date ? expiracao.toISOString() : expiracao;
+    const expiracaoVal = formatarDataMySQL(expiracao);
     return await this.#executeQuery(query, [usuario_id, token, expiracaoVal, ip]);
   }
 
